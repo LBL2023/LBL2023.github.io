@@ -1,15 +1,14 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff1d6;
+  background-color: #ffffff;
 }
 
 header {
-  background-color: rgb(200, 0, 255);
-  color: #fff;
+  background-color: #8018de;
+  color:  #feca14;
   padding: 1rem;
   text-align: center;
 }
-
 
 nav {
   display: flex;
@@ -38,6 +37,12 @@ main {
   margin: 0 auto;
   padding: 1rem;
 }
+
+body {
+  border: 20px solid #feca14;
+  margin: 0;
+}
+
 
 .team-rankings {
   background-color: rgb(255, 255, 255);
@@ -90,6 +95,10 @@ main {
   width: 100px;
 }
 
+.top-team-logo{
+  text-align: center;
+}
+
 /* Add random delay to each basketball */
 .basketball:nth-of-type(1) {
   animation-delay: 0s;
@@ -122,3 +131,27 @@ main {
   animation-delay: 4.5s;
 }
 
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  color:   #feca14;
+  background-color: #8018de;
+}
+
+th {
+  font-weight: bold;
+  color:  #feca14;
+  background-color: #8018de;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
