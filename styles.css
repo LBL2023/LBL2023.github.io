@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #8018de;
+  color:  #feca14;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+body {
+  border: 20px solid #feca14;
+  margin: 0;
+}
+
+
+.team-rankings {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.team-rankings h2 {
+  margin-top: 0;
+}
+
+.team-rankings ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team-rankings li {
+  margin-bottom: 0.5rem;
+}
+
+.team-name {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu a {
+  text-align: center;
+}
+
+@keyframes falling {
+  0% { top: -100px; }
+  100% { top: calc(100% + 100px); }
+}
+
+/* add more random balls falling on page */
+.basketball {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: falling 3s linear forwards;
+  width: 100px;
+}
+
+.top-team-logo{
+  text-align: center;
+}
+
+/* Add random delay to each basketball */
+.basketball:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.basketball:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+.basketball:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.basketball:nth-of-type(4) {
+  animation-delay: 1.5s;
+}
+.basketball:nth-of-type(5) {
+  animation-delay: 2s;
+}
+.basketball:nth-of-type(6) {
+  animation-delay: 2.5s;
+}
+.basketball:nth-of-type(7) {
+  animation-delay: 3s;
+}
+.basketball:nth-of-type(8) {
+  animation-delay: 3.5s;
+}
+.basketball:nth-of-type(9) {
+  animation-delay: 4s;
+}
+.basketball:nth-of-type(10) {
+  animation-delay: 4.5s;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  color:   #feca14;
+  background-color: #8018de;
+}
+
+th {
+  font-weight: bold;
+  color:  #feca14;
+  background-color: #8018de;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
