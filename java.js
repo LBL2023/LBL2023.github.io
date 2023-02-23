@@ -1,33 +1,3 @@
-// Define an array of objects for each team, with properties for team name and number of winning games
-const teams = [
-  { name: "CLB yeu me", wins: 3 },
-  { name: "Team nguoi Uc noi tieng Viet", wins: 2 },
-  { name: "Ton of happiness", wins: 0 },
-  { name: "Ga ran tai chanh", wins: 1 },
-  { name: "Araignee", wins: 1 },
-  { name: "AK47", wins: 1 },
-  { name: "11TH2", wins: 1 },
-  { name: "3 chang linh ngu lam", wins: 2 },
-  { name: "OK", wins: 1 },
-  { name: "Biet doi phong chong tham nhung", wins: 2 },
-  { name: "CLB lay lai niem tin", wins: 1 },
-];
-
-// Define a function to sort the teams in descending order based on their number of winning games
-function sortTeamsByWins() {
-  teams.sort((a, b) => b.wins - a.wins);
-}
-
-// Define a function to update the ranked positions of the teams in the HTML list
-function updateRankedTeams() {
-  const rankedTeamsList = document.getElementById("ranked-teams");
-  for (let i = 0; i < teams.length; i++) {
-    const teamElement = document.getElementById(`team${i + 1}`);
-    teamElement.innerHTML = `${i + 1}. ${teams[i].name} (${teams[i].wins} wins)`;
-    rankedTeamsList.appendChild(teamElement);
-  }
-}
-
 // JavaScript code to generate more basketballs 
 function addBalls() {
   // Create 10 new basketball elements
@@ -91,5 +61,4 @@ rankTeams();
 // Call the sortTeamsByWins and updateRankedTeams functions to calculate and display the ranked positions of the teams
 sortTeamsByWins();
 updateRankedTeams();
-
 
